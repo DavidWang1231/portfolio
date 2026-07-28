@@ -9,7 +9,7 @@ const projects = [
       "Best Prototype · three-zone motion scheme · automatic and manual modes",
     tags: ["Dobot Magician", "Orbbec", "MediaPipe", "Python"],
     visual: "video",
-    image: "/hana-demo-video.jpg",
+    image: "/portfolio/hana-demo-video.jpg",
     imageAlt:
       "HANA operator-monitor interface detecting a hand and tracking team members during the live demo",
     videoLabel: "HANA / LIVE DEMO",
@@ -17,7 +17,7 @@ const projects = [
     github:
       "https://github.com/DavidWang1231/Toyota-Innovation-Challenge-2026",
     video: "https://youtu.be/CwtKIzEQ1do?si=inl6vFvUxomHFXr9",
-    deck: "/hana-tmmc-presentation.pdf",
+    deck: "/portfolio/hana-tmmc-presentation.pdf",
   },
   {
     number: "02",
@@ -75,7 +75,7 @@ const projects = [
       "2D LiDAR · dynamic occupancy grid · obstacle-cost falloff · Foxglove",
     tags: ["C++", "ROS 2", "LiDAR", "Docker"],
     visual: "video",
-    image: "/autonomous-robot-demo.jpg",
+    image: "/portfolio/autonomous-robot-demo.jpg",
     imageAlt:
       "Foxglove Studio visualization of the robot occupancy-grid costmap, obstacle costs, teleoperation controls and camera feed",
     videoLabel: "WATONOMOUS / DEMO",
@@ -120,7 +120,7 @@ const otherBuilds = [
     proof:
       "Canvas 2D · procedural Web Audio · 23 ships · seeded daily challenge",
     tags: ["Vanilla JavaScript", "Canvas 2D", "Web Audio", "Zero Dependencies"],
-    image: "/signal-defender-og.png",
+    image: "/portfolio/signal-defender-og.png",
     imageAlt:
       "Signal Defender boss fight with PCB traces, projectiles and the Thermal Runaway boss",
     github: "https://github.com/DavidWang1231/signal-defender",
@@ -135,7 +135,7 @@ const otherBuilds = [
     proof:
       "WebRTC rooms · rules engine + heuristic AI · 720 simulated test rounds",
     tags: ["JavaScript", "WebRTC", "Game AI", "Node Tests"],
-    image: "/doudizhu-icon.png",
+    image: "/portfolio/doudizhu-icon.png",
     imageAlt:
       "Dou Dizhu Online app icon showing playing cards and a landlord crown",
     github: "https://github.com/DavidWang1231/doudizhu-online",
@@ -216,14 +216,14 @@ function ProjectVisual({
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           className="ldo-render"
-          src="/ldo-board-3d.png"
+          src="/portfolio/ldo-board-3d.png"
           alt="3D assembly render of the 5 volt to 3.3 volt LDO regulator PCB"
           loading="lazy"
         />
         <div className="ldo-layout-frame">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/ldo-board-layout.png"
+            src="/portfolio/ldo-board-layout.png"
             alt="Two-layer PCB layout showing copper pours, routed traces and component footprints"
             loading="lazy"
           />
@@ -243,7 +243,7 @@ function ProjectVisual({
         <div className="buck-panel buck-panel-main">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/buck-converter-3d.png"
+            src="/portfolio/buck-converter-3d.png"
             alt="3D assembly render of the in-progress 12 volt to 5 volt buck converter board"
             loading="lazy"
           />
@@ -253,7 +253,7 @@ function ProjectVisual({
           <div className="buck-panel">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/buck-converter-layout.png"
+              src="/portfolio/buck-converter-layout.png"
               alt="Two-layer routed PCB layout for the buck converter"
               loading="lazy"
             />
@@ -262,7 +262,7 @@ function ProjectVisual({
           <div className="buck-panel">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/buck-converter-schematic.png"
+              src="/portfolio/buck-converter-schematic.png"
               alt="Buck converter schematic showing 12 volt input, switching stage, feedback network and 5 volt output"
               loading="lazy"
             />
@@ -283,7 +283,7 @@ function ProjectVisual({
         <div className="battle-cad">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/battle-robot-cad.png"
+            src="/portfolio/battle-robot-cad.png"
             alt="Team SolidWorks assembly for the 150 gram battle robot"
             loading="lazy"
           />
@@ -292,7 +292,7 @@ function ProjectVisual({
         <div className="battle-prototype">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/battle-robot-prototype.jpg"
+            src="/portfolio/battle-robot-prototype.jpg"
             alt="150 gram battle robot chassis beside the motor controller, receiver and wiring under evaluation"
             loading="lazy"
           />
@@ -367,7 +367,7 @@ export default function Home() {
         </nav>
         <a
           className="header-link"
-          href="/Jiacheng_Wang_Resume_Fall2026.pdf"
+          href="/portfolio/Jiacheng_Wang_Resume_Fall2026.pdf"
           target="_blank"
         >
           Résumé <Arrow />
@@ -649,7 +649,7 @@ export default function Home() {
               GitHub
             </a>
             <a
-              href="/Jiacheng_Wang_Resume_Fall2026.pdf"
+              href="/portfolio/Jiacheng_Wang_Resume_Fall2026.pdf"
               target="_blank"
             >
               Résumé

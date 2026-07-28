@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://davidwang1231.github.io"),
+  metadataBase: new URL("https://davidwang1231.github.io/portfolio"),
   title: "Jiacheng Wang — Electrical Engineering Portfolio",
   description:
     "Electrical engineering, hardware, embedded systems and robotics work by Jiacheng Wang.",
@@ -11,14 +11,20 @@ export const metadata: Metadata = {
     description:
       "Hardware, embedded systems, robotics and engineering software.",
     type: "website",
-    images: [{ url: "/og.png", width: 1733, height: 907 }],
+    images: [
+      {
+        url: "https://davidwang1231.github.io/portfolio/og.png",
+        width: 1733,
+        height: 907,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Jiacheng Wang — Electrical Engineering",
     description:
       "Hardware, embedded systems, robotics and engineering software.",
-    images: ["/og.png"],
+    images: ["https://davidwang1231.github.io/portfolio/og.png"],
   },
 };
 
