@@ -26,7 +26,7 @@ const projects = [
     summary:
       "An ESP32-based privacy sweep that passively observes 2.4 GHz Wi-Fi traffic and flags upload-heavy devices before someone enters a closed space.",
     proof:
-      "Live RF demo: 622 KB/s upload with zero downlink · 200 ms heartbeat · explicit unknown states instead of false all-clears",
+      "Passive per-device traffic analysis · 200 ms heartbeat · explicit unknown states instead of false all-clears",
     tags: ["ESP32", "Wi-Fi Promiscuous Mode", "Python", "Signal Analysis"],
     visual: "sweep",
     github: "https://github.com/DavidWang1231/WashroomSweep",
@@ -350,8 +350,8 @@ function ProjectVisual({
         />
         <span className="sweep-label">ESP32 / PASSIVE 2.4 GHz WI-FI</span>
         <figcaption>
-          <strong>LIVE RF DEMO</strong>
-          <span>622 KB/s UP · 0 B DOWN</span>
+          <strong>LIVE RF VALIDATION</strong>
+          <span>UPLOAD ASYMMETRY DETECTED</span>
         </figcaption>
       </figure>
     );
