@@ -43,12 +43,12 @@ const projects = [
   {
     number: "04",
     title: "150 g Battle Robot",
-    type: "Combat Robotics · In Progress",
+    type: "Combat Robotics · Completed",
     summary:
-      "A pre-competition 150 g combat robot, developed with a team from mechanical packaging through the electrical system.",
+      "A completed 150 g combat robot, developed with a team from mechanical packaging through electrical integration and final assembly.",
     proof:
-      "Team CAD design contributor · motor, ESC and battery research · power-distribution planning",
-    tags: ["Electrical Research", "Component Selection", "Power System", "Combat Robotics"],
+      "Team CAD design contributor · motor, ESC and battery selection · power-distribution planning · hands-on assembly",
+    tags: ["Electrical Integration", "Component Selection", "Soldering", "Combat Robotics"],
     visual: "battle",
   },
   {
@@ -280,27 +280,47 @@ function ProjectVisual({
   if (project.visual === "battle") {
     return (
       <figure className="project-visual battle-visual">
-        <div className="battle-cad">
+        <div className="battle-finished">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/portfolio/battle-robot-cad.png"
-            alt="Team SolidWorks assembly for the 150 gram battle robot"
+            src="/portfolio/battle-robot-finished.jpg"
+            alt="Completed 150 gram battle robot with a black chassis, blue armor and dual vertical weapon supports"
             loading="lazy"
           />
-          <span>TEAM CAD / DESIGN CONTRIBUTOR</span>
+          <span>FINAL BUILD / 150 g</span>
         </div>
-        <div className="battle-prototype">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/portfolio/battle-robot-prototype.jpg"
-            alt="150 gram battle robot chassis beside the motor controller, receiver and wiring under evaluation"
-            loading="lazy"
-          />
-          <span>01 / ELECTRICAL RESEARCH</span>
+        <div className="battle-details">
+          <div className="battle-detail battle-assembly">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/portfolio/battle-robot-assembly.jpg"
+              alt="Soldering the power connector during final electrical assembly of the battle robot"
+              loading="lazy"
+            />
+            <span>03 / ASSEMBLY + SOLDERING</span>
+          </div>
+          <div className="battle-detail battle-prototype">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/portfolio/battle-robot-prototype.jpg"
+              alt="150 gram battle robot chassis beside the motor controller, receiver and wiring under evaluation"
+              loading="lazy"
+            />
+            <span>02 / ELECTRICAL PROTOTYPE</span>
+          </div>
+          <div className="battle-detail battle-cad">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/portfolio/battle-robot-cad.png"
+              alt="Team SolidWorks assembly for the 150 gram battle robot"
+              loading="lazy"
+            />
+            <span>01 / TEAM CAD</span>
+          </div>
         </div>
         <figcaption>
-          <strong>IN PROGRESS</strong>
-          <span>150 g CLASS · PRE-COMPETITION</span>
+          <strong>BUILD COMPLETE</strong>
+          <span>150 g CLASS · DESIGNED, WIRED + ASSEMBLED</span>
         </figcaption>
       </figure>
     );
