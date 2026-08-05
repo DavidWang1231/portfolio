@@ -21,6 +21,18 @@ const projects = [
   },
   {
     number: "02",
+    title: "WashroomSweep",
+    type: "Embedded Systems · RF Sensing",
+    summary:
+      "An ESP32-based privacy sweep that passively observes 2.4 GHz Wi-Fi traffic and flags upload-heavy devices before someone enters a closed space.",
+    proof:
+      "Live RF demo: 622 KB/s upload with zero downlink · 200 ms heartbeat · explicit unknown states instead of false all-clears",
+    tags: ["ESP32", "Wi-Fi Promiscuous Mode", "Python", "Signal Analysis"],
+    visual: "sweep",
+    github: "https://github.com/DavidWang1231/WashroomSweep",
+  },
+  {
+    number: "03",
     title: "Personal LDO Regulator Board",
     type: "PCB Design · Power",
     summary:
@@ -30,7 +42,7 @@ const projects = [
     visual: "ldo",
   },
   {
-    number: "03",
+    number: "04",
     title: "12 V to 5 V Buck Converter",
     type: "Power Electronics · In Progress",
     summary:
@@ -41,7 +53,7 @@ const projects = [
     visual: "buck",
   },
   {
-    number: "04",
+    number: "05",
     title: "150 g Battle Robot",
     type: "Combat Robotics · Completed",
     summary:
@@ -52,7 +64,7 @@ const projects = [
     visual: "battle",
   },
   {
-    number: "05",
+    number: "06",
     title: "MiniSpice",
     type: "Analog Circuits · Simulation",
     summary:
@@ -66,7 +78,7 @@ const projects = [
     live: "https://davidwang1231.github.io/minispice/",
   },
   {
-    number: "06",
+    number: "07",
     title: "Autonomous Robot Navigation",
     type: "Embedded Software · ROS 2",
     summary:
@@ -84,7 +96,7 @@ const projects = [
     github: "https://github.com/DavidWang1231/wato_asd_training",
   },
   {
-    number: "07",
+    number: "08",
     title: "VoltStream",
     type: "Electrical Systems · Monitoring",
     summary:
@@ -98,7 +110,7 @@ const projects = [
     live: "https://voltstream-davidwang.wangjiacheng1231.chatgpt.site",
   },
   {
-    number: "08",
+    number: "09",
     title: "FPGA Neural-Network Accelerator",
     type: "Digital Design · In Progress",
     summary:
@@ -180,6 +192,7 @@ const skillGroups = [
       "Quartus Prime",
       "PCB layout",
       "Soldering",
+      "ESP32",
     ],
   },
   {
@@ -321,6 +334,24 @@ function ProjectVisual({
         <figcaption>
           <strong>BUILD COMPLETE</strong>
           <span>150 g CLASS · DESIGNED, WIRED + ASSEMBLED</span>
+        </figcaption>
+      </figure>
+    );
+  }
+
+  if (project.visual === "sweep") {
+    return (
+      <figure className="project-visual sweep-visual">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/portfolio/washroomsweep-dashboard.png"
+          alt="WashroomSweep dashboard flagging a device uploading 622 kilobytes per second with no downlink traffic"
+          loading="lazy"
+        />
+        <span className="sweep-label">ESP32 / PASSIVE 2.4 GHz WI-FI</span>
+        <figcaption>
+          <strong>LIVE RF DEMO</strong>
+          <span>622 KB/s UP · 0 B DOWN</span>
         </figcaption>
       </figure>
     );
@@ -486,8 +517,8 @@ export default function Home() {
           <p className="kicker">01 / SELECTED WORK</p>
           <h2>Proof is in the build.</h2>
           <p>
-            Projects spanning power electronics, digital design, robotics and
-            electrical-system software.
+            Projects spanning power electronics, RF sensing, digital design,
+            robotics and electrical-system software.
           </p>
         </div>
 
