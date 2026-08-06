@@ -700,6 +700,12 @@ export default function Home() {
               GitHub
             </a>
             <a
+              href="/portfolio/Jiacheng_Wang_Engineering_Portfolio.pdf"
+              target="_blank"
+            >
+              Portfolio PDF
+            </a>
+            <a
               href="/portfolio/Jiacheng_Wang_Resume_Fall2026.pdf"
               target="_blank"
             >
