@@ -703,7 +703,10 @@ export default function Home() {
               href="/portfolio/Jiacheng_Wang_Engineering_Portfolio.pdf"
               target="_blank"
             >
-              Portfolio PDF
+              View PDF
+            </a>
+            <a href="/portfolio/Jiacheng_Wang_Portfolio.zip">
+              Download PDF
             </a>
             <a
               href="/portfolio/Jiacheng_Wang_Resume_Fall2026.pdf"
